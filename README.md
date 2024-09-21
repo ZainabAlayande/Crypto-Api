@@ -89,14 +89,21 @@ cd crypto-api
 2. Restore dependencies:
 ```
 dotnet restore
+
 ```
 3. Run the application:
 ```
 dotnet run
+
 ```
 
 ## Testing
 The project includes unit tests to verify the functionality of the services and controllers. To run the tests, use the command:
 ```
 dotnet test
+
 ```
+
+
+
+
