@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tLheKChKvTo=",
+  "dgSpecHash": "aFgh/8UFdoM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -13,7 +13,7 @@ public class CryptoControllerTests
         var mockResponse = new ApiResponse<List<CryptoResponseDto>>(true, "Data fetched successfully.", 
             new List<CryptoResponseDto>
             {
-                new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = 50000 }
+                new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = "50000" }
             });
         
         mockCryptoService.Setup(service => service.GetAllCryptos()).ReturnsAsync(mockResponse);
@@ -36,7 +36,7 @@ public class CryptoControllerTests
         var mockResponse = new ApiResponse<CryptoResponseDto>(
             true, 
             "Data fetched successfully.", 
-            new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = 50000 });
+            new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = "50000" });
         
         mockCryptoService
             .Setup(service => service.GetCryptoById("bitcoin"))
