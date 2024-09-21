@@ -8,7 +8,7 @@ public class CryptoService : ICryptoService
     }
 
     
-    public async Task<ApiResponse<List<CryptoResponseDto>>> GetAllCryptos()
+    public async Task<ApiResponse<List<CryptoResponseDto>>> GetAllCryptos() 
     {
         var apiUrl = "https://api.coincap.io/v2/assets";
         var response = await _httpClient.GetAsync(apiUrl);

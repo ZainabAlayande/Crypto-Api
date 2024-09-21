@@ -1,51 +1,56 @@
-// using Moq;
-// using Xunit;
-// using Microsoft.AspNetCore.Mvc;
+using Moq;
+using Xunit;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-// public class CryptoControllerTests
-// {
-//     [Fact]
-//     public async Task GetAllCryptos_ReturnsOkResult_WithApiResponse()
-//     {
-//         // Arrange
-//         var mockCryptoService = new Mock<ICryptoService>();
-//         mockCryptoService
-//             .Setup(service => service.GetAllCryptos())
-//             .ReturnsAsync(new ApiResponse<string>(true, "Data fetched successfully.", "cryptoData"));
+public class CryptoControllerTests
+{
+    [Fact]
+    public async Task GetAllCryptos_ReturnsOkResult_WithApiResponse()
+    {
+        var mockCryptoService = new Mock<ICryptoService>();
+        var mockResponse = new ApiResponse<List<CryptoResponseDto>>(true, "Data fetched successfully.", 
+            new List<CryptoResponseDto>
+            {
+                new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = 50000 }
+            });
+        
+        mockCryptoService.Setup(service => service.GetAllCryptos()).ReturnsAsync(mockResponse);
+        var controller = new CryptoController(mockCryptoService.Object);
 
-//         var controller = new CryptoController(mockCryptoService.Object);
+        var result = await controller.GetAllCryptos();
 
-//         // Act
-//         var result = await controller.GetAllCryptos();
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        var response = Assert.IsType<ApiResponse<List<CryptoResponseDto>>>(okResult.Value); 
+        Assert.True(response.Status);
+        Assert.Equal("Data fetched successfully.", response.Message);
+        Assert.NotNull(response.Data);
+        Assert.Equal("bitcoin", response.Data[0].Id);
+    }
 
-//         // Assert
-//         var okResult = Assert.IsType<OkObjectResult>(result);
-//         var response = Assert.IsType<dynamic>(okResult.Value); // To handle the anonymous type
-//         Assert.Equal("success", (string)response.status);
-//         Assert.Equal("Cryptos retrieved successfully.", (string)response.message);
-//         Assert.Equal("cryptoData", (string)response.data.Data); // Since `data` contains the ApiResponse's data field
-//     }
+    [Fact]
+    public async Task GetCryptoById_ReturnsOkResult_WithApiResponse()
+    {
+        var mockCryptoService = new Mock<ICryptoService>();   
+        var mockResponse = new ApiResponse<CryptoResponseDto>(
+            true, 
+            "Data fetched successfully.", 
+            new CryptoResponseDto { Id = "bitcoin", Name = "Bitcoin", PriceUsd = 50000 });
+        
+        mockCryptoService
+            .Setup(service => service.GetCryptoById("bitcoin"))
+            .ReturnsAsync(mockResponse);
 
-//     [Fact]
-//     public async Task GetCryptoById_ReturnsOkResult_WithApiResponse()
-//     {
-//         // Arrange
-//         var mockCryptoService = new Mock<ICryptoService>();
-//         mockCryptoService
-//             .Setup(service => service.GetCryptoById("bitcoin"))
-//             .ReturnsAsync(new ApiResponse<string>(true, "Data fetched successfully.", "bitcoinData"));
+        var controller = new CryptoController(mockCryptoService.Object);
 
-//         var controller = new CryptoController(mockCryptoService.Object);
+        var result = await controller.GetCryptoById("bitcoin");
 
-//         // Act
-//         var result = await controller.GetCryptoById("bitcoin");
-
-//         // Assert
-//         var okResult = Assert.IsType<OkObjectResult>(result);
-//         var response = Assert.IsType<dynamic>(okResult.Value); // Handle anonymous type
-//         Assert.Equal("success", (string)response.status);
-//         Assert.Equal("Crypto retrieved successfully.", (string)response.message);
-//         Assert.Equal("bitcoinData", (string)response.data.Data); // Accessing the data within ApiResponse
-//     }
-// }
-
+        var okResult = Assert.IsType<OkObjectResult>(result);
+        var response = Assert.IsType<ApiResponse<CryptoResponseDto>>(okResult.Value); 
+        Assert.True(response.Status);
+        Assert.Equal("Data fetched successfully.", response.Message);
+        Assert.NotNull(response.Data);
+        Assert.Equal("bitcoin", response.Data.Id);
+    }
+}
