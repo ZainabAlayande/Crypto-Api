@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\test.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\CryptoApiProject.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\CryptoApiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\CryptoApiProject.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\CryptoApiProject.csproj",
         "projectName": "CryptoApiProject",
-        "projectPath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\CryptoApiProject.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\CryptoApiProject.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,14 +97,14 @@
         }
       }
     },
-    "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\test.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\test.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\test.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\test.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\test\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -125,8 +125,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\CryptoApiProject.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\C#Projects\\crypto-api\\CryptoApiProject\\CryptoApiProject.csproj"
+              "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\CryptoApiProject.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\Desktop\\Crypto-Api\\CryptoApiProject\\CryptoApiProject.csproj"
               }
             }
           }
