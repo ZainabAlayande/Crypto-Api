@@ -378,3 +378,14 @@ C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\
 C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\test.csproj.nuget.dgspec.json
 C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\Debug\net8.0\MvcTestingAppManifest.json
 C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\Debug\net8.0\test.sourcelink.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\appsettings.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\CryptoApiProject.deps.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\CryptoApiProject.runtimeconfig.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test.deps.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test.runtimeconfig.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\project.assets.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\test.csproj.nuget.dgspec.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\Debug\net8.0\MvcTestingAppManifest.json
+C:\Users\ADMIN\C#Projects\crypto-api\CryptoApiProject\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\bin\Debug\net8.0\test\obj\Debug\net8.0\test.sourcelink.json
